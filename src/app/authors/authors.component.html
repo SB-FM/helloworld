@@ -1,0 +1,6 @@
+<ul id="authors">
+  <li *ngFor="let author of authors">
+    <app-favorite [is-favorite]="post.isFavorite" (change)="onFavoriteChanged($event)"></app-favorite>{{author}}  <app-like [like-count]="_author.likeCount" [is-liked]="_author.isLiked"></app-like>
+  </li>
+
+</ul>
